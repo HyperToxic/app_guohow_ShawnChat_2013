@@ -1,0 +1,14 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:adjustViewBounds="true"
+    android:background="#ff23262a"
+    android:gravity="center"
+    android:scaleType="fitXY"
+    android:text="Chat With Mates"
+    android:textColor="#ffffff"
+    android:textSize="32dp" >
+
+</TextView>

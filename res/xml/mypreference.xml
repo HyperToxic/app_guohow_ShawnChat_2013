@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="personize"
+        android:title="个性化" >
+    </PreferenceCategory>
+
+    <EditTextPreference
+        android:defaultValue="ShawnChater"
+        android:key="userName_perf"
+        android:summary="设置您的用户名"
+        android:title="用户名" />
+    <EditTextPreference
+        android:defaultValue="192.168.1.101"
+        android:key="ip_perf"
+        android:summary="设置您开启服务端的主机IP地址"
+        android:title="主机IP" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="notification_perf"
+        android:summary="选择是否开启消息通知"
+        android:title="消息通知" />
+
+   
+ <PreferenceCategory
+        android:key="tips"
+        android:title="贴士" >
+    </PreferenceCategory>
+
+    <Preference
+        android:key="help_perf"
+        android:summary="查看帮助信息,快速掌握如何使用"
+        android:title="入门" >
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="app.guohow.chatclient.Help"
+            android:targetPackage="app.guohow.chatclient" >
+        </intent>
+         </Preference>
+        <Preference
+        android:key="about_perf"
+        android:summary="查看ShawnChat的相关信息,及时获取更新"
+        android:title="关于" >
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="app.guohow.chatclient.About"
+            android:targetPackage="app.guohow.chatclient" >
+        </intent>
+        
+    </Preference>
+        
+   
+    
+    
+    <PreferenceCategory
+        android:key="advance"
+        android:title="高级" >
+    </PreferenceCategory>
+
+    <Preference
+        android:key="server_perf"
+        android:summary="开启主机服务,使用您的设备作为聊天系统服务器"
+        android:title="主机服务" >
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="app.guohow.chatclient.ServerActivity"
+            android:targetPackage="app.guohow.chatclient" >
+        </intent>
+        
+    </Preference>
+
+</PreferenceScreen>

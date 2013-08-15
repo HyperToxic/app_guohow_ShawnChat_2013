@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff23262a"
+    android:gravity="clip_vertical"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/login_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="未连接"
+        android:textColor="#ffffff"
+        android:textSize="10.0dip" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1.0dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/separator" />
+
+    <TextView
+        android:id="@+id/msg_recv"
+        android:layout_width="fill_parent"
+        android:layout_height="440dp"
+        android:gravity="bottom"
+        android:paddingLeft="15.0dip"
+        android:scrollbars="horizontal"
+        android:textColor="#ffffff"
+        android:textSize="14.0dip" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1.0dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/separator" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@null"
+        android:gravity="center|bottom"
+        android:soundEffectsEnabled="true"
+        android:textColor="@color/lighter_gray" />
+
+</LinearLayout>

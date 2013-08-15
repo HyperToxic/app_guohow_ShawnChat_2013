@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1.0dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/separator" />
+
+    <Switch
+        android:id="@+id/server_switch"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:checked="false"
+        android:layout_marginRight="18dip"
+        android:gravity="center_vertical"
+        android:text="  主机服务"
+        android:textOn="开"
+        android:textOff="关"
+        android:textSize="19dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:text="  ①您的设备需要接入局域网络,强烈建议使用路由器,这将消耗更多的电量 \n  ②服务将在后台运行,确保不被安全软件清理掉,如需关闭服务,只需关闭开关即可"
+        android:textColor="@color/darker_gray"
+        android:textSize="14dp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3.0dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/separator" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+    	android:text="  运行状态"
+        android:textColor="#ffffff"
+        android:textSize="19dp" />
+
+  
+
+    <TextView
+        android:id="@+id/server_info"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:text="  本机服务ip地址: \n  所用端口:  \n  持续时间:"
+        android:textColor="@color/darker_gray"
+        android:textSize="14dp" />
+    
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3.0dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/separator" />
+    
+    <ScrollView
+        android:scrollbarDefaultDelayBeforeFade="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+     
+     <TextView
+        android:id="@+id/server_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/darker_gray"
+        android:textSize="10dp" />
+     
+        </ScrollView>
+
+</LinearLayout>
